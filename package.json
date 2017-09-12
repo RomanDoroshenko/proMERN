@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack && webpack-dev-server ",
+    "start": "nodemon -L server.js ",
     "git": "git add . && git commit -m \"message\" && git push"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/RomanDoroshenko/proMERN#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "mongodb": "^2.2.31",
     "react": "^15.6.1",

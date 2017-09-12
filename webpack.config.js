@@ -6,6 +6,10 @@ module.exports = {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
   },
+  watchOptions: {
+    aggregateTimeout:300,
+    poll:1000
+  },
   module: {
     rules: [
       {
